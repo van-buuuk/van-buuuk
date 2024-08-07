@@ -65,14 +65,14 @@
           class="pig"
         />
         <main>
-          <canvas></canvas>
+          <canvas id="canvas-van-buUuk"></canvas>
         </main>
       </div>
 
       <script type="text/javascript">
         // <![CDATA[ 
         class App { static canvas =
-        document.querySelector('canvas'); static ctx =
+        document.getElementById('canvas-van-buUuk'); static ctx =
         App.canvas.getContext('2d'); static dpr = devicePixelRatio > 1 ? 2 : 1;
         static interval = 1000 / 60; static width = 1024; static height = 768;
         constructor() { this.backgrounds = [ new Background({ img:
